@@ -31,6 +31,7 @@ L.marker([-27.222633, -49.6455874], { icon })
 function selectImage(event){
     const button = event.currentTarget
     
+    console.log(button.children)
     
     //remover as classes .active//
     const buttons = document.querySelectorAll(".images button")
@@ -49,5 +50,4 @@ function selectImage(event){
 
     //adicionar a classe .active para este botao //
     button.classList.add('active')
-
 }
