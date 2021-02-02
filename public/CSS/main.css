@@ -1,0 +1,29 @@
+/**/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    color: white;
+    background: #EBF2F5;
+}
+
+/*em pega da pagina pai*/
+/*rem pega da pagina html*/
+
+:root {
+    font-size: 62.5%; /*que é o qui vale a 16px ou seja padrão do navegador*/
+}
+
+body, input, button, textarea{
+    /*font-weight: 400;
+    font-size:  18px;
+    line-height: 1;
+    font-family: 'Nunito', sans-serif;*/
+
+    font: 400 1.8rem/1 'Nunito', sans-serif;
+}
+

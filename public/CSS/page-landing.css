@@ -1,0 +1,106 @@
+#page-landing{
+    background:linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%); 
+
+    text-align: center;
+    min-height: 100vh;
+    
+    display: flex; /*joga a caixa landing alinhandoas*/
+    /*align-items: center;  só alinha em cima e em baixo */
+}
+
+#container{
+    margin: auto;                /*magin so ajusta para o eixo x*/
+    width: min(90%,112rem);     /*min faz a função minimo entre 90 e 112*/
+}
+
+.location, h1, .visit p{
+    height: 16vh;   
+    /*height: initial;
+    text-align: initial;*/
+}
+
+#logo{
+    animation-delay: 50ms;
+}
+
+.location{
+    animation-delay: 100ms;
+}
+
+/*funções das animações aplicadas */
+main h1{
+    animation-delay: 150ms;
+    font-size: clamp(4rem,8vw,8.4rem); /*função que pega o min , ideal , max*/
+}
+
+.visit p{
+    animation-delay: 200ms;
+}
+
+.visit a:houver{
+    background: #96feff;
+}
+
+.visit a{
+    width: 8rem;
+    height: 8rem;
+    background: #ffd666;
+    
+    border: none;
+    border-radius: 3rem;
+    
+    display: flex; 
+    align-items: center; /*alinha no eixo x*/
+    justify-content: center; /*alinha no eixo y*/
+
+    margin: auto; 
+    transition: backgroud 200ms;
+    animation-delay: 250ms;
+}
+
+/*descktop version*/
+@media (min-width: 760px) { /* a função so vai funcionar quando a largura for maior que 700px*/
+    #container{
+        padding: 5rem 2rem;
+        /*shorthand backgroud : image repeat position/ size */
+        background: url("../images/bg.svg") no-repeat 80% / clamp(30rem,54vw,56rem);
+    }
+    
+    header {
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+    }
+    .location, h1, .visit.p {
+        height: initial;
+        text-align: initial;
+    }
+    .location {
+        text-align: right;
+        font-size:  2.4rem;
+        line-height: 1.5;
+    }
+
+    main h1 {
+        font-weight: bold;
+        line-height: .88;
+
+        margin: clamp(10%,9vh,12%) 0 4rem;
+        width: min(300px,80%);
+    }
+    .visit{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .visit p{
+        font-size: 2.4rem;
+        line-height: 1.5;
+        width: clamp(20rem, 20vw, 30rem);
+    }   
+
+    .visit a{
+        margin: initial;
+    }
+}
