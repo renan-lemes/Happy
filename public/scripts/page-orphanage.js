@@ -10,7 +10,8 @@ const options = {
 /*create map */ 
 var map = L.map('mapid',options).setView([-27.222633, -49.6455874], 15)
 /* create and add tileLayer*/ 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map) //longetude e latitude e zoom//
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png')
+.addTo(map) //longetude e latitude e zoom//
 
 /*create icon*/ 
 const icon = L.icon({

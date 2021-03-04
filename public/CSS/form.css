@@ -75,7 +75,7 @@ fieldset legend {
     resize: vertical;
     padding: 1.6rem;
     line-height: 2.8rem;
-    max-height: 65px;
+    max-height: 100px;
 }
 
 .input-block.images button{
@@ -91,6 +91,10 @@ fieldset legend {
 
 .new-upload {
     position: relative;
+}
+
+.new-upload + .new-upload {
+    margin-top: 2.4rem;
 }
 
 .new-upload span {
