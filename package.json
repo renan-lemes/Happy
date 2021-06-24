@@ -19,6 +19,7 @@
   "homepage": "https://github.com/renan-lemes/Happy#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "hbs": "^4.1.2",
     "nodemon": "^2.0.7"
   }
 }
