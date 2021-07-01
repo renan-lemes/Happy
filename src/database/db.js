@@ -18,3 +18,4 @@ function execute(db) {
 }
 
 module.exports = Database.open(__dirname + '/database.sqlite').then(execute)
+//modulo que exporta e da open dirname concatenando o file /database.sqlite então executa a função execute que retorna db//
