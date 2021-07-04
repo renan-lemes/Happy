@@ -8,6 +8,8 @@ const pages = require('./pages');
 //iniciando bliblioteca
 const server = express()
 server
+    //usar req da body do req
+    .use(express.urlencoded({extended:true}))
     //ultilizando os arquivos estaticos
     .use(express.static('public'))
 
@@ -20,6 +22,7 @@ server
     .get('/orphanage',pages.orphanage)
     .get('/orphanages',pages.orphanages)
     .get('/create-orphanage',createOphanages)
+    .post('/save-orphanage', pages.saveOphanage)
 
         //console.log(path.join(__dirname, 'views', 'index.html'))//
         //return response.sendFile(path.join(__dirname,'views','index.html'))
